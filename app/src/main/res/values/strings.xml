@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VoiceRecording</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="audio_format">3gpp</string>
+    <string name="choose_format_title">Title</string>
+</resources>

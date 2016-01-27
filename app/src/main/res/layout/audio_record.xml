@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/dialog_selector">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Audio Recording"
+        android:textSize="30dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00 : 00 : 00"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/timer"
+        android:text="Tap the icon to record.."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/record_lyt"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_below="@+id/txt_msg">
+
+        <ProgressBar
+            android:id="@+id/rotate"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:indeterminateDrawable="@drawable/loader"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_record" />
+    </RelativeLayout>
+
+</RelativeLayout>
